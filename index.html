@@ -12,6 +12,7 @@
 <body>
     
     <article class="profileCard" data-testid="test-profile-card">
+        <!-- User Avarta and Bio -->
         <div class="topDiv">
             <figure class="figure" data-testid="test-user-avatar">
                 <img src="profileImage.jpg" alt="" data-alt="Close-up black and white portrait of Isaac Luka" srcset="">
@@ -23,17 +24,90 @@
                 </div>
                 <p class="userbio" data-testid="test-user-bio">
                     FrontEnd Web Developer specializing in high-end scalable web solutions and community-driven digital products. Turning complex problems into elegant code.
-                </p>
-            
+                </p>    
                 <div class="timerDiv">
                     <div class=" timerBox">
                         <span class="material-symbols-outlined timerIcon">schedule</span>
                         <span class="timer" data-testid="test-user-time" id="epoch-timer">0000000000000</span>
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         </div>
+
+        <!-- Dividing Line -->
+        <div class="divider"></div>
+
+        <!-- Hobbies and Dislikes -->
+        <div class="interests">
+            <div class="hobbies">
+                <div class="headerDiv">
+                    <span class="dot hobby"></span>
+                    <h3 class="hobbiesHeader header">Interests &amp; Hobbies</h3>
+                </div>
+                <div data-testid="test-user-hobbies">
+                    <ul>
+                        <li>
+                            <div class="listIcon">
+                                <span class="material-symbols-outlined icon">Headphones</span>
+                            </div>
+                            <div>
+                                <span class="listTitle">Music</span>
+                                <span class="listInfo">I love singing, listening to music and playing the guitar. I also do background vocals for recording artists.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listIcon">
+                                <span class="material-symbols-outlined icon">sports_soccer</span>
+                            </div>
+                            <div>
+                                <span class="listTitle">Football</span>
+                                <span class="listInfo">I support the greatest football club of all time - Real Madrid FC. Hala Madrid!.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listIcon">
+                                <span class="material-symbols-outlined icon">movie</span>
+                            </div>
+                            <div>
+                                <span class="listTitle">Movies</span>
+                            <span class="listInfo">I love to watch sitcoms. My favourite sitcom of all time is <strong class="highlight">"How I Met Your Mother"</strong> and obviously my favourite character was Ted Mosby.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dislikes">
+                <div class="headerDiv">
+                    <span class="dot dislike"></span>
+                    <h2 class="dislikesHeader header">Pet Peeves &amp; Dislikes</h2>
+                </div>
+                <div data-testid="test-user-hobbies">
+                    <ul>
+                        <li>
+                            <div class="listIcon dislike">
+                                <span class="material-symbols-outlined icon dislike">report</span>
+                            </div>
+                            <div>
+                                <span class="listTitle">Dishonesty</span>
+                                <span class="listInfo">I hate lies and manipulation. Intergrity and trust are a must-have in all my relationships whether personal or professional.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dividing Line -->
+        <div class="divider"></div>
+
+        <!-- Socials -->
+        <div class="socials">
+
+        </div>
+
+
+
     </article>
     
 </body>

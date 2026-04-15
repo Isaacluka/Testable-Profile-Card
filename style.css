@@ -10,11 +10,12 @@ body{
     
 }
 .profileCard {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: .75rem;
     overflow: hidden;
-    padding: 2rem;
+    padding: .2rem;    
 }
 .topDiv{
     display: flex;
@@ -25,10 +26,14 @@ body{
 }
 .figure{
     position: relative;
+    align-self: center;
 }
 img {
-    width: 8rem;
+    width: 16rem;
     height: auto;
+    border: .1rem solid #e5e8f1;
+    border-radius: 1rem;
+    padding: 0%;
 }
 .bioDiv{
     flex: 1 1 0%;
@@ -54,6 +59,7 @@ img {
     font-size: 2.25rem;
     line-height: 1.25;
     color: #2e333b;
+    margin: 0%;
 }
 .userbio{
     font-size: 1rem;
@@ -81,10 +87,100 @@ span.timerIcon{
 }
 span.timer{
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-     color: #5b5f68;
+    color: #5b5f68;
     font-size: 0.75rem;
     letter-spacing: -0.025em;
 }
+.divider{
+    width: 75%;
+    height: 1rem;
+    align-self: center;
+    justify-self: center;
+    border-top: .1rem solid #e5e8f1;
+}
+.interests{
+    /* border: .1rem solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.headerDiv {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.dot {
+    width: .375rem;
+    /* border: 1rem solid red; */
+    height: .375rem;
+    border-radius: 9999px;
+    display: block;
+}
+.dot.hobby {
+    background-color: #005db6;
+}
+.dot.dislike {
+    background-color: #9f403d;
+}
+.header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .75rem;
+    letter-spacing: .05em;  
+    color: #5b5f68; 
+}
+.hobbies {
+    flex: 1 1 0%;
+    gap: 1.5rem;
+}
+.dislikes{
+    flex: 1 1 0%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+li {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+.listIcon {
+    background-color: #d6e3ff;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-top: .125rem;
+}
+.listIcon.dislike{
+    background-color: rgba(254, 137, 131, 0.2);;
+}
+.icon {
+    font-size: .875rem;
+    color: #005db6;
+}
+.icon.dislike{
+    color: #9f403d;
+}
+.highlight {
+    color: #005db6;
+}
+.listTitle {
+    display: block;
+    font-family: "Manrope";
+    font-weight: bold;
+    color: #2e333b;
+}
+.listInfo {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #5b5f68;
+}
+
 
 @media (min-width: 768px) {
   .profileCard {
@@ -101,12 +197,18 @@ span.timer{
 
 @media (min-width: 768px) {
   img {
-    width: 11rem;
+    width: 16rem;
     height: auto;
     }
 }
 @media (min-width: 768px) {
   .username{
     font-size: 3rem;
+    }
+}
+@media (min-width: 768px) {
+  .interests{
+    padding: 1rem 4rem;
+    flex-direction: row;
     }
 }
