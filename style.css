@@ -180,8 +180,28 @@ li {
     line-height: 1.25rem;
     color: #5b5f68;
 }
-
-
+.socials{
+    display: flex;
+    gap: 2rem;
+    align-self: center;
+    /* color: #5b5f68; */
+}
+.socialLink{
+    background-color: #e5e8f1;
+    color: #5b5f68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+}
+.footer {
+    margin: 2rem;
+    align-self: center;
+    color: #5b5f68;
+    font-size: .75rem;
+}
 @media (min-width: 768px) {
   .profileCard {
     padding: .3rem; 

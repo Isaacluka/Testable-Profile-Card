@@ -7,20 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Testable Profile Card</title>
 </head>
 <body>
     
     <article class="profileCard" data-testid="test-profile-card">
-        <!-- User Avarta and Bio -->
+        <!-- User Avatar and Bio -->
         <div class="topDiv">
             <figure class="figure" data-testid="test-user-avatar">
-                <img src="profileImage.jpg" alt="" data-alt="Close-up black and white portrait of Isaac Luka" srcset="">
+                <img src="profileImage.jpg" alt="Close-up black and white portrait of Isaac Luka" data-alt="Close-up black and white portrait of Isaac Luka" srcset="">
             </figure>
             <div class="bioDiv">
                 <div class="titleDiv">
                     <span class="title">FrontEnd Engineer</span>
-                    <h2 class="username" data-testid="test-user-name">Isaac Luka</h2>
+                    <h2 class="username" aria-label="Username" data-testid="test-user-name">Isaac Luka</h2>
                 </div>
                 <p class="userbio" data-testid="test-user-bio">
                     FrontEnd Web Developer specializing in high-end scalable web solutions and community-driven digital products. Turning complex problems into elegant code.
@@ -38,7 +39,7 @@
         <div class="divider"></div>
 
         <!-- Hobbies and Dislikes -->
-        <div class="interests">
+        <section class="interests">
             <div class="hobbies">
                 <div class="headerDiv">
                     <span class="dot hobby"></span>
@@ -61,7 +62,7 @@
                             </div>
                             <div>
                                 <span class="listTitle">Football</span>
-                                <span class="listInfo">I support the greatest football club of all time - Real Madrid FC. Hala Madrid!.</span>
+                                <span class="listInfo">I support the greatest football club of all time - Real Madrid FC. <br /> Hala Madrid!.</span>
                             </div>
                         </li>
                         <li>
@@ -96,15 +97,27 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Dividing Line -->
         <div class="divider"></div>
 
         <!-- Socials -->
-        <div class="socials">
+        <nav class="socials" data-testid="test-user-social-links">
+            <div class="socialLink" data-testid="test-user-social-twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="socialLink" data-testid="test-user-social-linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="socialLink" data-testid="test-user-social-github">
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </nav>
 
-        </div>
+        <footer class="footer">
+            Copyright &copy; Isaac Luka 2026.
+        </footer>
 
 
 
