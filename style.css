@@ -1,13 +1,12 @@
 body{
     background-color: #faf9fd;
-    padding: 24px;
+    padding: 1.5rem;
     margin: 0;
     display: flex;
     height: 100%;
     min-height: 100vh;
     justify-content: center;
-    font-family: "Inter";
-    
+    font-family: "Inter";    
 }
 .profileCard {
     display: flex;
@@ -195,6 +194,12 @@ li {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: .5rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.socialLink:hover {
+    background-color: #d6e3ff;
+    color: #00519f;
 }
 .footer {
     margin: 2rem;
@@ -216,17 +221,16 @@ li {
 }
 
 @media (min-width: 768px) {
+  body{
+    padding: 3rem 24rem;
+  }
   img {
     width: 16rem;
     height: auto;
     }
-}
-@media (min-width: 768px) {
   .username{
     font-size: 3rem;
     }
-}
-@media (min-width: 768px) {
   .interests{
     padding: 1rem 4rem;
     flex-direction: row;
