@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <title>Testable Profile Card</title>
+</head>
+<body>
+    
+    <article class="profileCard" data-testid="test-profile-card">
+        <div class="topDiv">
+            <figure class="figure" data-testid="test-user-avatar">
+                <img src="profileImage.jpg" alt="" data-alt="Close-up black and white portrait of Isaac Luka" srcset="">
+            </figure>
+            <div class="bioDiv">
+                <div class="titleDiv">
+                    <span class="title">FrontEnd Engineer</span>
+                    <h2 class="username" data-testid="test-user-name">Isaac Luka</h2>
+                </div>
+                <p class="userbio" data-testid="test-user-bio">
+                    FrontEnd Web Developer specializing in high-end scalable web solutions and community-driven digital products. Turning complex problems into elegant code.
+                </p>
+            
+                <div class="timerDiv">
+                    <div class=" timerBox">
+                        <span class="material-symbols-outlined timerIcon">schedule</span>
+                        <span class="timer" data-testid="test-user-time" id="epoch-timer">0000000000000</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </article>
+    
+</body>
+<script src="script.js"></script>
+</html>
