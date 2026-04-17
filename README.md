@@ -1,6 +1,6 @@
 # Testable Profile Card
 
-This ias an accessible, responsive Profile Card component/page using semantic HTML and modern frontend patterns (HTML/CSS/vanilla JS only).
+This is an accessible, responsive Profile Card component/page using semantic HTML and modern frontend patterns (HTML/CSS/vanilla JS only).
 
 ## Getting Started
 
